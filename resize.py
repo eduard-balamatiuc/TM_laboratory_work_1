@@ -1,13 +1,19 @@
 from PIL import Image
+# make sure to install the PIL library
+# pip install Pillow
 
-# Load the image
-img = Image.open(r"background_118.png")
 
-# Resize the image to the specified resolution of 1280x720
-img_resized = img.resize((1280, 720))
+def resize_this_image(path, width, height):
+    # Load the image
+    img = Image.open(path)
 
-# Save the resized image
-resized_image_path = r"background_118_resized.png"
-img_resized.save(resized_image_path)
+    # Resize the image to the specified resolution of 1280x720
+    img_resized = img.resize((width, height)
 
-resized_image_path
+    # Save the resized image
+    resized_image_path = path.replace(".png", "_resized.png")
+    img_resized.save(resized_image_path)
+
+# Just update here the path of the image you want to resize
+# And the width and height you want to resize it to
+resize_this_image(r"background_118.png", 1280, 720)

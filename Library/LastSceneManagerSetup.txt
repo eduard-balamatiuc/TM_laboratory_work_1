@@ -1,5 +1,0 @@
-sceneSetups:
-- path: Assets/_MAIN/Scenes/VisualNovel.unity
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0

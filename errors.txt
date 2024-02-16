@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1: expected statement.
-    ﻿
-     ^
+File "game/script.rpy", line 90: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Try to find a relation between all of them"
+                                                ^
 
 Ren'Py Version: Ren'Py 8.2.0.24012702
-Fri Feb 16 17:44:34 2024
+Fri Feb 16 23:59:02 2024

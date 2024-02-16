@@ -8,7 +8,7 @@ def resize_this_image(path, width, height):
     img = Image.open(path)
 
     # Resize the image to the specified resolution of 1280x720
-    img_resized = img.resize((width, height)
+    img_resized = img.resize((width, height))
 
     # Save the resized image
     resized_image_path = path.replace(".png", "_resized.png")
@@ -16,4 +16,4 @@ def resize_this_image(path, width, height):
 
 # Just update here the path of the image you want to resize
 # And the width and height you want to resize it to
-resize_this_image(r"background_118.png", 1280, 720)
+resize_this_image(r"/home/eduard/project_game/laboratory_work_1/game/images/back 118.png", 1920, 1080)

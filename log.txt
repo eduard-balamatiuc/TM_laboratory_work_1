@@ -1,87 +1,17 @@
-2024-02-16 21:10:03 UTC
+2024-02-16 23:25:16 UTC
 macOS-14.1-arm64-arm-64bit
 Ren'Py 8.2.0.24012702
 
-Early init took 0.02s
-Loading error handling took 0.02s
-Loading script took 0.06s
+Early init took 0.03s
+Loading error handling took 0.08s
+Loading script took 0.18s
 Loading save slot metadata took 0.04s
 Loading persistent took 0.00s
-
-File "game/script.rpy", line 54: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    student "dsfhjaihdjhfidashfiasjdfh"
-    ^
-DPI scale factor: 1.000000
-Interface start took 0.31s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M2'
-Version: b'2.1 Metal - 88'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 14.62s
-Loading error handling took 0.12s
-Loading script took 0.11s
-Loading save slot metadata took 0.01s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 54: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    student "Did you change the name and save directory of the game in options.rpy?"
-    ^
-DPI scale factor: 1.000000
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M2'
-Version: b'2.1 Metal - 88'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 17.09s
-Loading error handling took 0.02s
-Loading script took 0.04s
-Loading save slot metadata took 0.01s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 54: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    student "Did you change the name and save directory of the game in options.rpy?"
-    ^
-DPI scale factor: 1.000000
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M2'
-Version: b'2.1 Metal - 88'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 51.61s
-Loading error handling took 0.12s
-Loading script took 0.13s
-Loading save slot metadata took 0.01s
-Loading persistent took 0.00s
-Running init code took 0.13s
+Running init code took 0.20s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.01s
 Index archives took 0.00s
-Backing up script files to '/Users/iuliana/Library/RenPy/backups/lab':
 Dump and make backups took 0.02s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
@@ -91,70 +21,14 @@ Creating interface object took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.01s
 Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M2'
-Version: b'2.1 Metal - 88'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/script.rpy", line 55, in script
-    student "Did you change the name and save directory of the game in options.rpy?"
-  File "/Volumes/renpy-8.2.0-sdk/renpy-8.2.0-sdk/renpy/ast.py", line 2557, in execute
-    Say.execute(self)
-  File "/Volumes/renpy-8.2.0-sdk/renpy-8.2.0-sdk/renpy/ast.py", line 575, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "/Volumes/renpy-8.2.0-sdk/renpy-8.2.0-sdk/renpy/ast.py", line 464, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'student' is not defined.
-
-While running game code:
-  File "game/script.rpy", line 55, in script
-    student "Did you change the name and save directory of the game in options.rpy?"
-Exception: Sayer 'student' is not defined.
-Resetting cache.
-Early init took 82.37s
-Loading error handling took 0.09s
-Loading script took 0.09s
-Loading save slot metadata took 0.01s
-Loading persistent took 0.00s
-Running init code took 0.01s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/iuliana/Library/RenPy/backups/lab':
-Dump and make backups took 0.02s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.02s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.01s
-Build styles took 0.00s
-Load screen analysis took 0.00s
+Load screen analysis took 0.01s
 Analyze screens took 0.00s
-Save screen analysis took 0.01s
+Save screen analysis took 0.00s
 Prepare screens took 0.03s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
+Save bytecode. took 0.02s
 Running _start took 0.00s
-Interface start took 0.04s
+Interface start took 0.38s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1470, 956)
@@ -167,89 +41,9 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 122.60s
-Loading error handling took 0.11s
+Early init took 151.55s
+Loading error handling took 0.12s
 Loading script took 0.13s
-Loading save slot metadata took 0.01s
-Loading persistent took 0.00s
-Running init code took 0.02s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/iuliana/Library/RenPy/backups/lab':
-Dump and make backups took 0.02s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.02s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.01s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M2'
-Version: b'2.1 Metal - 88'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 228.67s
-Loading error handling took 0.11s
-Loading script took 0.14s
-Loading save slot metadata took 0.01s
-Loading persistent took 0.00s
-Running init code took 0.02s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/iuliana/Library/RenPy/backups/lab':
-Dump and make backups took 0.02s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.02s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M2'
-Version: b'2.1 Metal - 88'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 246.54s
-Loading error handling took 0.01s
-Loading script took 0.04s
 Loading save slot metadata took 0.01s
 Loading persistent took 0.00s
 Running init code took 0.01s
@@ -273,7 +67,7 @@ Prepare screens took 0.03s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
 Running _start took 0.00s
-Interface start took 0.05s
+Interface start took 0.04s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1470, 956)
@@ -286,12 +80,12 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 278.60s
-Loading error handling took 0.01s
-Loading script took 0.05s
+Early init took 162.37s
+Loading error handling took 0.02s
+Loading script took 0.08s
 Loading save slot metadata took 0.01s
 Loading persistent took 0.00s
-Running init code took 0.02s
+Running init code took 0.01s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.01s
@@ -304,47 +98,7 @@ Initial gc took 0.02s
 DPI scale factor: 1.000000
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.00s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M2'
-Version: b'2.1 Metal - 88'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 674.60s
-Loading error handling took 0.10s
-Loading script took 0.14s
-Loading save slot metadata took 0.01s
-Loading persistent took 0.00s
-Running init code took 0.02s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/iuliana/Library/RenPy/backups/lab':
-Dump and make backups took 0.02s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.02s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
+Init translation took 0.01s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
@@ -366,139 +120,55 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 1112.88s
+Early init took 188.29s
+Loading error handling took 0.01s
+Loading script took 0.05s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+Running init code took 0.01s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Backing up script files to '/Users/iuliana/Library/RenPy/backups/lab':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.02s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.01s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M2'
+Version: b'2.1 Metal - 88'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 992.75s
 Loading error handling took 0.11s
 Loading script took 0.14s
-Loading save slot metadata took 0.01s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 65: expected 'label_name' not found.
-    jump 
-        ^
-
-File "game/script.rpy", line 76: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Check emails"
-                  ^
-
-File "game/script.rpy", line 80: expected 'label_name_declare' not found.
-    label
-         ^
-DPI scale factor: 1.000000
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M2'
-Version: b'2.1 Metal - 88'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 2120.24s
-Loading error handling took 0.10s
-Loading script took 0.13s
-Loading save slot metadata took 0.01s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 76: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Check emails"
-                  ^
-
-File "game/script.rpy", line 85: end of line expected.
-    student_1 "Among the encrypted emails, you find coded references to a clandestine group known only as ""The Illuminated Circle."" The emails suggest that the professor was a member of this secret society and was involved in their esoteric pursuits. "
-                                                                                                           ^
-
-File "game/script.rpy", line 90: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "See a patern"
-                  ^
-DPI scale factor: 1.000000
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M2'
-Version: b'2.1 Metal - 88'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 2121.59s
-Loading error handling took 0.01s
-Loading script took 0.04s
-Loading save slot metadata took 0.01s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 76: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Check emails"
-                  ^
-
-File "game/script.rpy", line 85: end of line expected.
-    student_1 "Among the encrypted emails, you find coded references to a clandestine group known only as ""The Illuminated Circle."" The emails suggest that the professor was a member of this secret society and was involved in their esoteric pursuits. "
-                                                                                                           ^
-
-File "game/script.rpy", line 90: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "See a patern"
-                  ^
-DPI scale factor: 1.000000
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M2'
-Version: b'2.1 Metal - 88'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 2124.27s
-Loading error handling took 0.01s
-Loading script took 0.04s
-Loading save slot metadata took 0.01s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 76: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Check emails"
-                  ^
-
-File "game/script.rpy", line 85: end of line expected.
-    student_1 "Among the encrypted emails, you find coded references to a clandestine group known only as ""The Illuminated Circle."" The emails suggest that the professor was a member of this secret society and was involved in their esoteric pursuits. "
-                                                                                                           ^
-
-File "game/script.rpy", line 90: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "See a patern"
-                  ^
-DPI scale factor: 1.000000
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M2'
-Version: b'2.1 Metal - 88'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 2154.62s
-Loading error handling took 0.02s
-Loading script took 0.04s
 Loading save slot metadata took 0.02s
 Loading persistent took 0.00s
 
-File "game/script.rpy", line 85: end of line expected.
-    student_1 "Among the encrypted emails, you find coded references to a clandestine group known only as ""The Illuminated Circle."" The emails suggest that the professor was a member of this secret society and was involved in their esoteric pursuits. "
-                                                                                                           ^
+File "game/script.rpy", line 169: end of line expected.
+    jump label end_scene
+               ^
 DPI scale factor: 1.000000
 Interface start took 0.06s
 
@@ -513,32 +183,9 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 2157.19s
-Loading error handling took 0.01s
-Loading script took 0.04s
-Loading save slot metadata took 0.01s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 85: end of line expected.
-    student_1 "Among the encrypted emails, you find coded references to a clandestine group known only as ""The Illuminated Circle."" The emails suggest that the professor was a member of this secret society and was involved in their esoteric pursuits. "
-                                                                                                           ^
-DPI scale factor: 1.000000
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M2'
-Version: b'2.1 Metal - 88'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 2186.00s
-Loading error handling took 0.01s
-Loading script took 0.10s
+Early init took 1026.08s
+Loading error handling took 0.02s
+Loading script took 0.05s
 Loading save slot metadata took 0.01s
 Loading persistent took 0.00s
 Running init code took 0.02s
@@ -554,47 +201,7 @@ Initial gc took 0.02s
 DPI scale factor: 1.000000
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.00s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.22s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M2'
-Version: b'2.1 Metal - 88'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 2406.81s
-Loading error handling took 0.09s
-Loading script took 0.14s
-Loading save slot metadata took 0.01s
-Loading persistent took 0.00s
-Running init code took 0.02s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/iuliana/Library/RenPy/backups/lab':
-Dump and make backups took 0.03s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.02s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
+Init translation took 0.01s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
@@ -615,10 +222,17 @@ Version: b'2.1 Metal - 88'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
 Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
 Resetting cache.
-Early init took 2499.39s
-Loading error handling took 0.10s
-Loading script took 0.13s
+Early init took 1082.40s
+Loading error handling took 0.11s
+Loading script took 0.14s
 Loading save slot metadata took 0.01s
 Loading persistent took 0.00s
 Running init code took 0.02s
@@ -655,9 +269,23 @@ Version: b'2.1 Metal - 88'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
 Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
 Resetting cache.
-Early init took 2575.23s
-Loading error handling took 0.11s
+Early init took 1256.84s
+Loading error handling took 0.10s
 Loading script took 0.14s
 Loading save slot metadata took 0.01s
 Loading persistent took 0.00s
@@ -674,50 +302,10 @@ Initial gc took 0.02s
 DPI scale factor: 1.000000
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.02s
+Init translation took 0.01s
 Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M2'
-Version: b'2.1 Metal - 88'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 2678.19s
-Loading error handling took 0.11s
-Loading script took 0.13s
-Loading save slot metadata took 0.01s
-Loading persistent took 0.00s
-Running init code took 0.02s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/iuliana/Library/RenPy/backups/lab':
-Dump and make backups took 0.02s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.02s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
+Analyze screens took 0.00s
 Save screen analysis took 0.01s
 Prepare screens took 0.03s
 Save pyanalysis. took 0.00s
@@ -735,81 +323,25 @@ Version: b'2.1 Metal - 88'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
 Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 2938.35s
-Loading error handling took 0.10s
-Loading script took 0.14s
-Loading save slot metadata took 0.01s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 90: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Try to find a relation between all of them"
-                                                ^
-DPI scale factor: 1.000000
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M2'
-Version: b'2.1 Metal - 88'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 3268.25s
-Loading error handling took 0.11s
-Loading script took 0.16s
-Loading save slot metadata took 0.01s
-Loading persistent took 0.00s
-Running init code took 0.02s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/iuliana/Library/RenPy/backups/lab':
-Dump and make backups took 0.02s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.02s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.04s
+Init translation took 0.00s
 Build styles took 0.00s
-Load screen analysis took 0.00s
+Load screen analysis took 0.02s
 Analyze screens took 0.00s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
+Prepare screens took 0.00s
 Running _start took 0.00s
-Interface start took 0.17s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M2'
-Version: b'2.1 Metal - 88'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
-Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 5614.03s
-Loading error handling took 0.10s
-Loading script took 0.14s
+Early init took 1302.45s
+Loading error handling took 0.11s
+Loading script took 0.13s
 Loading save slot metadata took 0.01s
 Loading persistent took 0.00s
 
-File "game/script.rpy", line 156: end of line expected.
-    student_1 "You see "REDRUM" written all over the panel"
-                        ^
+File "game/script.rpy", line 218: expected statement.
+    end_scene
+             ^
 DPI scale factor: 1.000000
-Interface start took 0.05s
+Interface start took 0.07s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1470, 956)
@@ -822,30 +354,7 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 5615.74s
-Loading error handling took 0.02s
-Loading script took 0.04s
-Loading save slot metadata took 0.01s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 156: end of line expected.
-    student_1 "You see "REDRUM" written all over the panel"
-                        ^
-DPI scale factor: 1.000000
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M2'
-Version: b'2.1 Metal - 88'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 5646.02s
+Early init took 1313.17s
 Loading error handling took 0.02s
 Loading script took 0.05s
 Loading save slot metadata took 0.01s
@@ -872,6 +381,60 @@ Prepare screens took 0.03s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.01s
 Running _start took 0.00s
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M2'
+Version: b'2.1 Metal - 88'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.01s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Resetting cache.
+Early init took 1483.33s
+Loading error handling took 0.11s
+Loading script took 0.14s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+Running init code took 0.01s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Backing up script files to '/Users/iuliana/Library/RenPy/backups/lab':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.02s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.01s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
 Interface start took 0.05s
 
 Initializing gl2 renderer:
@@ -884,8 +447,15 @@ Version: b'2.1 Metal - 88'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
 Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
 Resetting cache.
-Early init took 6738.14s
+Early init took 1550.00s
 Loading error handling took 0.11s
 Loading script took 0.14s
 Loading save slot metadata took 0.01s
@@ -925,77 +495,8 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 7443.54s
-Loading error handling took 0.11s
-Loading script took 0.13s
-Loading save slot metadata took 0.01s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 217: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a " at the end of the first line.)
-            "A clue appears on the screen. It seems like a cipher that you are familiar with. The message hidden was {b}THE SHINING {/b}
-DPI scale factor: 1.000000
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M2'
-Version: b'2.1 Metal - 88'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 7933.04s
-Loading error handling took 0.11s
-Loading script took 0.13s
-Loading save slot metadata took 0.01s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 217: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a " at the end of the first line.)
-            "A clue appears on the screen. It seems like a cipher that you are familiar with. The message hidden was {b}THE SHINING {/b}
-DPI scale factor: 1.000000
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M2'
-Version: b'2.1 Metal - 88'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 7951.31s
+Early init took 1606.10s
 Loading error handling took 0.02s
-Loading script took 0.05s
-Loading save slot metadata took 0.01s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 267: expected ':' not found.
-    label choices_12_common
-                           ^
-DPI scale factor: 1.000000
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1470, 956)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M2'
-Version: b'2.1 Metal - 88'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 7965.04s
-Loading error handling took 0.01s
 Loading script took 0.05s
 Loading save slot metadata took 0.01s
 Loading persistent took 0.00s
@@ -1012,7 +513,7 @@ Initial gc took 0.02s
 DPI scale factor: 1.000000
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.02s
+Init translation took 0.01s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.00s
@@ -1034,12 +535,138 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 7978.90s
-Loading error handling took 0.01s
-Loading script took 0.04s
+Early init took 1719.65s
+Loading error handling took 0.11s
+Loading script took 0.14s
 Loading save slot metadata took 0.01s
 Loading persistent took 0.00s
 Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Backing up script files to '/Users/iuliana/Library/RenPy/backups/lab':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.02s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.01s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M2'
+Version: b'2.1 Metal - 88'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 261, in script
+    jump choices_present
+  File "/Volumes/renpy-8.2.0-sdk/renpy-8.2.0-sdk/renpy/ast.py", line 1698, in execute
+    rv = renpy.game.script.lookup(target)
+  File "/Volumes/renpy-8.2.0-sdk/renpy-8.2.0-sdk/renpy/script.py", line 1103, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'choices_present'.
+
+While running game code:
+  File "game/script.rpy", line 261, in script
+    jump choices_present
+ScriptError: could not find label 'choices_present'.
+Resetting cache.
+Early init took 1759.20s
+Loading error handling took 0.11s
+Loading script took 0.14s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+
+The label choices_present_lab is defined twice, at File "game/script.rpy", line 266:
+        label choices_present_lab:
+and File "game/script.rpy", line 270:
+        label choices_present_lab:
+
+DPI scale factor: 1.000000
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M2'
+Version: b'2.1 Metal - 88'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1786.50s
+Loading error handling took 0.01s
+Loading script took 0.05s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+Running init code took 0.01s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Backing up script files to '/Users/iuliana/Library/RenPy/backups/lab':
+Dump and make backups took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.02s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.01s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M2'
+Version: b'2.1 Metal - 88'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(860, 484) drawable=(1720, 968)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Resetting cache.
+Early init took 1841.19s
+Loading error handling took 0.11s
+Loading script took 0.12s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+Running init code took 0.01s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.01s
@@ -1051,7 +678,7 @@ Initial gc took 0.02s
 DPI scale factor: 1.000000
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.02s
+Init translation took 0.01s
 Build styles took 0.00s
 Load screen analysis took 0.01s
 Analyze screens took 0.00s

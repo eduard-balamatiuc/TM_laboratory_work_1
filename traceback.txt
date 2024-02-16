@@ -1,24 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 55, in script
-    student "Did you change the name and save directory of the game in options.rpy?"
-Exception: Sayer 'student' is not defined.
+  File "game/script.rpy", line 261, in script
+    jump choices_present
+ScriptError: could not find label 'choices_present'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 55, in script
-    student "Did you change the name and save directory of the game in options.rpy?"
-  File "/Volumes/renpy-8.2.0-sdk/renpy-8.2.0-sdk/renpy/ast.py", line 2557, in execute
-    Say.execute(self)
-  File "/Volumes/renpy-8.2.0-sdk/renpy-8.2.0-sdk/renpy/ast.py", line 575, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "/Volumes/renpy-8.2.0-sdk/renpy-8.2.0-sdk/renpy/ast.py", line 464, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'student' is not defined.
+  File "game/script.rpy", line 261, in script
+    jump choices_present
+  File "/Volumes/renpy-8.2.0-sdk/renpy-8.2.0-sdk/renpy/ast.py", line 1698, in execute
+    rv = renpy.game.script.lookup(target)
+  File "/Volumes/renpy-8.2.0-sdk/renpy-8.2.0-sdk/renpy/script.py", line 1103, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'choices_present'.
 
 macOS-14.1-arm64-arm-64bit arm64
 Ren'Py 8.2.0.24012702
 laboratory_work_1 1.0
-Fri Feb 16 23:11:03 2024
+Sat Feb 17 01:54:03 2024

@@ -1,6 +1,6 @@
 ﻿define student_1 = Character("Student", color="#FFFFFF")
-define student_2 = Character("Student", color="#FFFFFF")
-define professor = Character("Character", color="#FFFFFF")
+define collegue = Character("Collegue", color="#FFFFFF")
+define professor = Character("Professor", color="#FFFFFF")
 define dean = Character("Dean", color="#FFFFFF")
 
 
@@ -28,8 +28,8 @@ label start:
     label choices_message_collegues:
     show student_1 default
     student_1 "Hey guys. Have anyone seen professor X today? I have to present the lab today"
-    show student_2 default
-    student_2 "Yeah, I presented the lab today in 118,  he said he will be there"
+    show collegue default
+    collegue "Yeah, I presented the lab today in 118,  he said he will be there"
 
     jump choises_common
 
@@ -112,6 +112,7 @@ label start:
     label choices_4_common:
     student_1 "Go to dean's office and announce him that you think something strange is happening with the professor and he is missing for too long"
     "It's been 2 days and you are reading in the local news that this professor was found dead in weird circumstances. You are haunted by this situation for your whole life "
+    jump end_scene
 
     label choices_relation:
         label choices_5:
@@ -125,7 +126,7 @@ label start:
         label choices_ask_friend:
         student_1 "sent a photo"
         student_1 "Do you have an idea what are those?"
-        student_2 "eah, they seem like some planet's position"
+        collegue "eah, they seem like some planet's position"
         jump choices_5_common
 
         label choices_5_common:
@@ -166,6 +167,7 @@ label start:
     student_1 "You find the professor in FAFCAB"
     professor "Finally, you are here, It took you longer than I expected. Sorry for the rick roll, it became quite boring around here"
     student_1 "You presented your final lab and you finally finished your semester"
+    jump end_scene
 
     label choices_check_calendar:
     student_1 "You find a strange name of the  event that takes place right now"
@@ -209,9 +211,11 @@ label start:
         label choices_advantage:
         "Finally, after 2 hours the professor came. He had an unexpected meeting at the dean's office and is sorry that you had to wait for so long."
         "He is checking his document with all the marks and sees that you already have one. He thinks he must have forgotten that you already had had a mark and is sorry that you had been waiting for so long"
+        jump end_scene
 
         label choices_9_common:
         "Finally, after 2 hours the professor came. He had an unexpected meeting at the dean's office and is sorry that you had to wait for so long. He is ready to put a bonus point to your laboratory work"
+        jump end_scene
 
         label choices_click_password:
         "A clue appears on the screen. It seems like a cipher that you are familiar with. The message hidden was {b}THE SHINING {/b}"
@@ -254,9 +258,12 @@ label start:
                 "Wait for the professor a little bit more":
                     jump choices_wait_professor
                 "Write him another mail and ask him if there is a possibility to present the laboratory work tomorrow":
-                    jump choices_present_lab
+                    jump choices_present
 
         label choices_wait_professor:
+        jump choices_present_lab
+
+        label choices_present:
         student_1 "You are ready to send the email"
         jump choices_present_lab
 
@@ -266,11 +273,13 @@ label start:
 
         label choices_12_common:
         student_1 "You presented the laboratory work and got the highest mark possible"
+        jump end_scene
+
+    label end_scene:
+    return
 
 
-
-
-
+"""
     # These display lines of dialogue.
 
     student_1 "Did you change the name and save directory of the game in options.rpy?"
@@ -293,4 +302,5 @@ label start:
             pass
     # This ends the game.
     student_1 "dsfhjaihdjhfidashfiasjdfh"
-    return
+"""
+

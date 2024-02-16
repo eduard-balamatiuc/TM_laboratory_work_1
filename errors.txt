@@ -2,9 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 267: expected ':' not found.
-    label choices_12_common
-                           ^
+The label choices_present_lab is defined twice, at File "game/script.rpy", line 266:
+        label choices_present_lab:
+and File "game/script.rpy", line 270:
+        label choices_present_lab:
+
 
 Ren'Py Version: Ren'Py 8.2.0.24012702
-Sat Feb 17 01:22:35 2024
+Sat Feb 17 01:54:35 2024

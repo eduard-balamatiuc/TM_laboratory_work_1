@@ -23,8 +23,9 @@ label start:
     show player default
 
     # These display lines of dialogue.
-
+    player "dsfhjaihdjhfidashfiasjdfh"
     player "Did you change the name and save directory of the game in options.rpy?"
+    
 
     $ answer = renpy.input("Did you change the values at the top of options.rpy?").strip().lower()
 
@@ -42,5 +43,5 @@ label start:
         "Choice 2":
             pass
     # This ends the game.
-
+    player "dsfhjaihdjhfidashfiasjdfh"
     return

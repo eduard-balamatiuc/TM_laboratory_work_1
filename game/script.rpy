@@ -87,29 +87,185 @@ label start:
             "What's going on?"
             "Take one of the subjects name and google it":
                 jump choices_google_it
-            "Try to find a relation between all of them"
+            "Try to find a relation between all of them":
                 jump choices_relation
 
+    label choices_google_it:
+    student_1 "It coincides with the position of the moon on the day before"
+
+    label choices_4:
+        menu:
+            "Hmm, what's this? ..."
+            "Try to find the position of the moon for today and write an email to the that mysterious person":
+                jump choices_find_position
+            "Google the name of the association":
+                jump choices_google_name
+
+    label choices_find_position:
+    student_1 "You found the code for the current day, but you still think it is a really bad idea to engage in such strange things"
+    jump choices_4_common
+
+    label choices_google_name:
+    student_1 "You discover just few sites which explain that this is a really old society that is involved in some rituals"
+    jump choices_4_common
+
+    label choices_4_common:
+    student_1 "Go to dean's office and announce him that you think something strange is happening with the professor and he is missing for too long"
+    "It's been 2 days and you are reading in the local news that this professor was found dead in weird circumstances. You are haunted by this situation for your whole life "
+
+    label choices_relation:
+        label choices_5:
+            menu:
+                "What should I do?"
+                "You thought about the planets and remembered about the planetarium near university.":
+                    jump choices_5_common
+                "You have a friend that is pasisonate of planets and astrological things. Write them a message":
+                    jump choices_ask_friend
+
+        label choices_ask_friend:
+        student_1 "sent a photo"
+        student_1 "Do you have an idea what are those?"
+        student_2 "eah, they seem like some planet's position"
+        jump choices_5_common
+
+        label choices_5_common:
+        student_1 "Visit the planetarium."
+        student_1 "It is already late and you think the planetarium might be closed."
+        label choices_6:
+            menu:
+                "What should I do?"
+                "Check the door and see if is closed":
+                    jump choices_check_door
+                "Check the panels besides the planetarium":
+                    jump choices_6_common
+        label choices_check_door:
+        student_1 "You checked the door and the planetarium is closed"
+        jump choices_6_common
+
+        label choices_6_common:
+        student_1 "You see some text written over the panel"
+
+        label choices_7:
+            menu:
+                "What will be my next step?"
+                "Find your phone's flashlight and check the text":
+                    jump choices_check_phone
+                "Go back to university":
+                    jump choices_go_to_university
+        label choices_check_phone:
+        student_1 "You see {b}REDRUM{/b} written all over the panel"
+        jump choices_4_common
+
+        label choices_go_to_university:
+        student_1 "It is already late and the professor is nowhere to be seen"
+        jump choices_4_common
+
     label choices_look_emails:
-    student_1 "hi"
+    student_1 "See a suspicious link and press Access the link"
+    student_1 "You've been redirected to  Rick Astley - Never Gonna Give You Up and a note from the professor that you can find him in FAFCAB"
+    student_1 "You find the professor in FAFCAB"
+    professor "Finally, you are here, It took you longer than I expected. Sorry for the rick roll, it became quite boring around here"
+    student_1 "You presented your final lab and you finally finished your semester"
 
     label choices_check_calendar:
-    student_1 "hi"
+    student_1 "You find a strange name of the  event that takes place right now"
+    student_1 "Decrypt the name of the event"
+    student_1 "You found out that is actually a meeting of an association"
+    student_1 "Google the association"
 
+    label choices_8:
+        menu:
+            "You found a site, but you cannot enter it since it requires a special password"
+            "Go through professor's notes and maybe find the password":
+                jump choices_look_notes
+            "Click on {b}Cannot remember password?{/b}":
+                jump choices_click_password
 
-    jump choices_laptop_look
+    label choices_look_notes:
+        label choices_look_notes_decision:
+            menu:
+                "You found some notes in another language"
+                "Try to translate all of them one by one":
+                    jump choices_translate
+                "Look through the rest of the notes":
+                    jump choices_find_document
+
+        label choices_translate:
+        student_1 "You find some weird messages and you decide that it is not your business to look through all of them"
+        student_1 "Look through the rest of the notes"
+        jump choices_find_document
+
+        label choices_find_document:
+        student_1 "You find a document where the professor keeps all a of your marks"
+
+        label choices_9:
+            menu:
+                "How should I be? How can I do it correctly?"
+                "Take advantage of this and write in the document the mark for your final laboratory work":
+                    jump choices_advantage
+                "Be an honest student and wait for the professor":
+                    jump choices_9_common
+
+        label choices_advantage:
+        "Finally, after 2 hours the professor came. He had an unexpected meeting at the dean's office and is sorry that you had to wait for so long."
+        "He is checking his document with all the marks and sees that you already have one. He thinks he must have forgotten that you already had had a mark and is sorry that you had been waiting for so long"
+
+        label choices_9_common:
+        "Finally, after 2 hours the professor came. He had an unexpected meeting at the dean's office and is sorry that you had to wait for so long. He is ready to put a bonus point to your laboratory work"
+
+        label choices_click_password:
+        "A clue appears on the screen. It seems like a cipher that you are familiar with. The message hidden was {b}THE SHINING {/b}"
+
+        label choice_10:
+            menu:
+                "You finally enter the site and there is an actual board where you can see your professor."
+                "Close the website":
+                    jump choices_9_common
+                "Read more":
+                    jump choices_read_more
+
+        label choices_read_more:
+        student_1 "You see that is an actual site for some professors that are experts in the AI domain. You assume that maybe they are doing a research paper based on AI. You decided to close the website"
+        jump choices_9_common
 
     label choices_book:
-  
-    student_1 "hi"
+        label choices_11:
+            menu:
+                "You observe that there is an underlined word on almost each page "
+                "Write the words on a paper ":
+                    jump choices_11_common
+                "Continue to analyze the book":
+                    jump choices_analyze_book
+
+        label choices_analyze_book:
+        student_1 "You discover nothing else and decided to analyze the words"
+        jump choices_11_common
+
+        label choices_11_common:
+        student_1 "The message hidden was {b}Find me in 310.{/b}"
+        student_1 "You find the professor in 310."
+        professor "I hope you found the quizzes fun. You can have a bonus point for that"
+        jump choices_12_common
 
     label choices_papers:
+        label choices_12:
+            menu:
+                "You see nothing interesting. Some boring papers abour Machine learning and AI"
+                "Wait for the professor a little bit more":
+                    jump choices_wait_professor
+                "Write him another mail and ask him if there is a possibility to present the laboratory work tomorrow":
+                    jump choices_present_lab
 
-    student_1 "hi"
+        label choices_wait_professor:
+        student_1 "You are ready to send the email"
+        jump choices_present_lab
 
+        label choices_present_lab:
+        "The professor finally came. He was stuck at a conference that had taken place at 13:00."
+        jump choices_12_common
 
-
-
+        label choices_12_common:
+        student_1 "You presented the laboratory work and got the highest mark possible"
 
 
 

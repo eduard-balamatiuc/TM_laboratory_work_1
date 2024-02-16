@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 90: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Try to find a relation between all of them"
-                                                ^
+File "game/script.rpy", line 267: expected ':' not found.
+    label choices_12_common
+                           ^
 
 Ren'Py Version: Ren'Py 8.2.0.24012702
-Fri Feb 16 23:59:02 2024
+Sat Feb 17 01:22:35 2024

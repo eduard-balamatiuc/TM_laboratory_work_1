@@ -1,22 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 261, in script
-    jump choices_present
-ScriptError: could not find label 'choices_present'.
+  File "game/script.rpy", line 68, in script
+    "You got suspicious and bored and decided to go through his stuff"
+Exception: Image 'student_1' does not accept attributes 'default'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 261, in script
-    jump choices_present
-  File "/Volumes/renpy-8.2.0-sdk/renpy-8.2.0-sdk/renpy/ast.py", line 1698, in execute
-    rv = renpy.game.script.lookup(target)
-  File "/Volumes/renpy-8.2.0-sdk/renpy-8.2.0-sdk/renpy/script.py", line 1103, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'choices_present'.
+  File "game/script.rpy", line 68, in script
+    "You got suspicious and bored and decided to go through his stuff"
+  File "/Volumes/renpy-8.2.0-sdk/renpy-8.2.0-sdk/renpy/ast.py", line 1113, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "/Volumes/renpy-8.2.0-sdk/renpy-8.2.0-sdk/renpy/ast.py", line 1076, in show_imspec
+    renpy.config.show(name,
+  File "/Volumes/renpy-8.2.0-sdk/renpy-8.2.0-sdk/renpy/exports.py", line 739, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "/Volumes/renpy-8.2.0-sdk/renpy-8.2.0-sdk/renpy/display/image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "/Volumes/renpy-8.2.0-sdk/renpy-8.2.0-sdk/renpy/display/displayable.py", line 246, in _duplicate
+    args.extraneous()
+  File "/Volumes/renpy-8.2.0-sdk/renpy-8.2.0-sdk/renpy/display/displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'student_1' does not accept attributes 'default'.
 
-macOS-14.1-arm64-arm-64bit arm64
+macOS-10.16-x86_64-i386-64bit x86_64
 Ren'Py 8.2.0.24012702
 laboratory_work_1 1.0
-Sat Feb 17 01:54:03 2024
+Sat Feb 17 16:21:30 2024

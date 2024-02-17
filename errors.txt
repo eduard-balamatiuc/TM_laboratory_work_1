@@ -2,7 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 164: Indentation mismatch.
+File "game/script.rpy", line 50: expected 'comma or end of line' not found.
+    with moveinright
+    ^
 
 Ren'Py Version: Ren'Py 8.2.0.24012702
-Sat Feb 17 02:21:37 2024
+Sat Feb 17 16:04:03 2024

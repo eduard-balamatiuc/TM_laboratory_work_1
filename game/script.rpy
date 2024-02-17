@@ -3,18 +3,35 @@ define collegue = Character("Collegue", color="#FFFFFF")
 define professor = Character("Professor", color="#FFFFFF")
 define dean = Character("Dean", color="#FFFFFF")
 
+image student :
+    "student_1.png"
+    zoom 1.5
 
+image collegue:
+    "collegue.png"
+    zoom 2.2
 # The game starts here.
+image desktop:
+    "desktop.png"
+    zoom 2.2
+
 
 label start:
 
     scene bg_cab_118
     "It was a tough semester and really loaded with a lot of tasks and laboratory works. You have to present your final project and today is the deadline."
+    show student
+    with dissolve
     "You received an email from the professor X a day before, where he mentioned that he will be at the university at 13:00 in 3-118 on the day of the deadline."
-    scene bg_classroom
-    "As you approach the cabinet you see it that is open, the professor is not there, but some of his things are still on the table, including his computer."
 
-    show student_1 default
+    hide student with moveoutright
+
+    scene bg_classroom
+    show student at left with moveinleft
+    "As you approach the cabinet you see that it is open, the professor is not there, but some of his things are still on the table, including his computer."
+
+    show student
+    
     label choices:
         menu:
                 "What will you do now?"
@@ -26,10 +43,14 @@ label start:
                     jump choices_wait
 
     label choices_message_collegues:
-    show student_1 default
+    show student
+    show collegue:
+        xalign 0.9 yalign 0.85
+    with moveinright
     student_1 "Hey guys. Have anyone seen professor X today? I have to present the lab today"
-    show collegue default
+
     collegue "Yeah, I presented the lab today in 118,  he said he will be there"
+    hide collegue with moveoutright
 
     jump choises_common
 
@@ -46,9 +67,10 @@ label start:
     label choises_common:
     "You waited for an hour already and no trace of the professor"
     "You got suspicious and bored and decided to go through his stuff"
-    show student_1 default
+    
 
     scene bg_monitor_screen
+    
     label choices_1:
         menu:
                 "Where will you look for the next hint?"
@@ -58,7 +80,9 @@ label start:
                     jump choices_book
                 "Look through his research papers":
                     jump choices_papers
+
     label choices_laptop:
+    show desktop at center
             menu:
                 "What will you check now?"
                 "Check emails":

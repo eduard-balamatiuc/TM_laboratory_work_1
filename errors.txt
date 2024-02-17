@@ -2,7 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 325: Indentation mismatch.
+File "game/script.rpy", line 32: style property outline is not known.
+    outline 2, "#000000"
+           ^
 
 Ren'Py Version: Ren'Py 8.2.0.24012702
-Sat Feb 17 18:37:05 2024
+Sat Feb 17 21:24:35 2024

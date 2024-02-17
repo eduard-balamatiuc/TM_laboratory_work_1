@@ -26,15 +26,21 @@ image dean:
     "dean.png"
     zoom 0.6
 
-style outline is text:
-    color "#657CD5"
-    size 40
-
-
 screen stats():
-    text "Kindness: [kindness]" align (0.05, 0.05) style "outline"
-    text "Discoveries: [discoveries]" align (0.05, 0.1) style "outline"
-    text "Sneakiness: [sneakiness]" align (0.05, 0.15) style "outline"
+    vbox:
+        xalign 0.05
+        yalign 0.05
+        textbutton "Kindness: [kindness]":
+            action Null 
+            text_size 40
+
+        textbutton "Discoveries: [discoveries]":
+            action Null 
+            text_size 40
+
+        textbutton "Sneakiness: [sneakiness]":
+            action Null 
+            text_size 40
 
 # The game starts here.
 label start:

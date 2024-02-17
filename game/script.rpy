@@ -11,7 +11,7 @@ label start:
     scene bg_cab_118
     "It was a tough semester and really loaded with a lot of tasks and laboratory works. You have to present your final project and today is the deadline."
     "You received an email from the professor X a day before, where he mentioned that he will be at the university at 13:00 in 3-118 on the day of the deadline."
-    scene bg_cab_118_inside
+    scene bg_classroom
     "As you approach the cabinet you see it that is open, the professor is not there, but some of his things are still on the table, including his computer."
 
     show student_1 default
@@ -47,6 +47,8 @@ label start:
     "You waited for an hour already and no trace of the professor"
     "You got suspicious and bored and decided to go through his stuff"
     show student_1 default
+
+    scene bg_monitor_screen
     label choices_1:
         menu:
                 "Where will you look for the next hint?"
@@ -109,8 +111,13 @@ label start:
     student_1 "You discover just few sites which explain that this is a really old society that is involved in some rituals"
     jump choices_4_common
 
+    scene bg_dean_office
+
     label choices_4_common:
+    scene bg_dean_office
     student_1 "Go to dean's office and announce him that you think something strange is happening with the professor and he is missing for too long"
+    scene bg_magazine
+    show dean default
     "It's been 2 days and you are reading in the local news that this professor was found dead in weird circumstances. You are haunted by this situation for your whole life "
     jump end_scene
 
@@ -126,10 +133,12 @@ label start:
         label choices_ask_friend:
         student_1 "sent a photo"
         student_1 "Do you have an idea what are those?"
+        show collegue default
         collegue "eah, they seem like some planet's position"
         jump choices_5_common
 
         label choices_5_common:
+        scene bg_planetarium
         student_1 "Visit the planetarium."
         student_1 "It is already late and you think the planetarium might be closed."
         label choices_6:
@@ -151,6 +160,7 @@ label start:
                 "What will be my next step?"
                 "Find your phone's flashlight and check the text":
                     jump choices_check_phone
+
                 "Go back to university":
                     jump choices_go_to_university
         label choices_check_phone:
@@ -158,13 +168,16 @@ label start:
         jump choices_4_common
 
         label choices_go_to_university:
+        scene bg_cab_118
         student_1 "It is already late and the professor is nowhere to be seen"
         jump choices_4_common
 
     label choices_look_emails:
     student_1 "See a suspicious link and press Access the link"
     student_1 "You've been redirected to  Rick Astley - Never Gonna Give You Up and a note from the professor that you can find him in FAFCAB"
+    scene bg_faf_cab
     student_1 "You find the professor in FAFCAB"
+    show professor default
     professor "Finally, you are here, It took you longer than I expected. Sorry for the rick roll, it became quite boring around here"
     student_1 "You presented your final lab and you finally finished your semester"
     jump end_scene
@@ -246,8 +259,11 @@ label start:
         jump choices_11_common
 
         label choices_11_common:
+        scene bg_cab_310
         student_1 "The message hidden was {b}Find me in 310.{/b}"
+        scene bg_cab_inside
         student_1 "You find the professor in 310."
+        show professor default
         professor "I hope you found the quizzes fun. You can have a bonus point for that"
         jump choices_12_common
 

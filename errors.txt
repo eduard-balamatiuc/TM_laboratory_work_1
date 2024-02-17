@@ -2,11 +2,7 @@
 errors listed below, and try again.
 
 
-The label choices_present_lab is defined twice, at File "game/script.rpy", line 266:
-        label choices_present_lab:
-and File "game/script.rpy", line 270:
-        label choices_present_lab:
-
+File "game/script.rpy", line 164: Indentation mismatch.
 
 Ren'Py Version: Ren'Py 8.2.0.24012702
-Sat Feb 17 01:54:35 2024
+Sat Feb 17 02:21:37 2024

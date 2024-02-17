@@ -1,15 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 68, in script
-    "You got suspicious and bored and decided to go through his stuff"
-Exception: Image 'student_1' does not accept attributes 'default'.
+  File "game/script.rpy", line 178, in script
+    show collegue default
+Exception: Image 'collegue' does not accept attributes 'default'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 68, in script
-    "You got suspicious and bored and decided to go through his stuff"
+  File "game/script.rpy", line 178, in script
+    show collegue default
   File "/Volumes/renpy-8.2.0-sdk/renpy-8.2.0-sdk/renpy/ast.py", line 1113, in execute
     show_imspec(self.imspec, atl=getattr(self, "atl", None))
   File "/Volumes/renpy-8.2.0-sdk/renpy-8.2.0-sdk/renpy/ast.py", line 1076, in show_imspec
@@ -18,13 +18,13 @@ Full traceback:
     if not base.find_target() and renpy.config.missing_show:
   File "/Volumes/renpy-8.2.0-sdk/renpy-8.2.0-sdk/renpy/display/image.py", line 421, in find_target
     self.target = target._duplicate(a)
-  File "/Volumes/renpy-8.2.0-sdk/renpy-8.2.0-sdk/renpy/display/displayable.py", line 246, in _duplicate
+  File "/Volumes/renpy-8.2.0-sdk/renpy-8.2.0-sdk/renpy/display/transform.py", line 1089, in _duplicate
     args.extraneous()
   File "/Volumes/renpy-8.2.0-sdk/renpy-8.2.0-sdk/renpy/display/displayable.py", line 109, in extraneous
     raise Exception("Image '{}' does not accept attributes '{}'.".format(
-Exception: Image 'student_1' does not accept attributes 'default'.
+Exception: Image 'collegue' does not accept attributes 'default'.
 
 macOS-10.16-x86_64-i386-64bit x86_64
 Ren'Py 8.2.0.24012702
 laboratory_work_1 1.0
-Sat Feb 17 16:21:30 2024
+Sat Feb 17 18:14:31 2024

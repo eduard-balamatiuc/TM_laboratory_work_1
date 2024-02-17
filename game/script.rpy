@@ -175,7 +175,8 @@ label start:
         label choices_ask_friend:
         student_1 "sent a photo"
         student_1 "Do you have an idea what are those?"
-        show collegue default
+        show collegue:
+            xalign 0.1 yalign 1.5
         collegue "eah, they seem like some planet's position"
         jump choices_5_common
 
@@ -211,6 +212,7 @@ label start:
 
         label choices_go_to_university:
         scene bg_cab_118
+        show student with dissolve
         student_1 "It is already late and the professor is nowhere to be seen"
         jump choices_4_common
 

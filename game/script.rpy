@@ -30,8 +30,7 @@ label start:
 
     scene bg_cab_118
     "It was a tough semester and really loaded with a lot of tasks and laboratory works. You have to present your final project and today is the deadline."
-    show student
-    with dissolve
+    show student with dissolve
     "You received an email from the professor X a day before, where he mentioned that he will be at the university at 13:00 in 3-118 on the day of the deadline."
 
     hide student with moveoutright
@@ -227,12 +226,14 @@ label start:
     student_1 "You find the professor in FAFCAB"
 
    
-    
+    play sound "applause.mp3" volume 0.8
     professor "Finally, you are here, It took you longer than I expected. Sorry for the rick roll, it became quite boring around here"
     student_1 "You presented your final lab and you finally finished your semester"
     jump end_scene
 
     label choices_check_calendar:
+    show desktop:
+        xalign 0.48 yalign 0.06
     student_1 "You find a strange name of the  event that takes place right now"
     student_1 "Decrypt the name of the event"
     student_1 "You found out that is actually a meeting of an association"
@@ -321,6 +322,7 @@ label start:
             zoom 1.5
         student_1 "You find the professor in 310."
        
+        play sound "applause.mp3" volume 0.8
         professor "I hope you found the quizzes fun. You can have a bonus point for that"
         play sound "audio/bonus-points.mp3" volume 0.8
         jump choices_12_common

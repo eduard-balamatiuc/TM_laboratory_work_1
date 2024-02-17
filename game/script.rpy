@@ -3,6 +3,8 @@ define collegue = Character("Collegue", color="#FFFFFF")
 define professor = Character("Professor", color="#FFFFFF")
 define dean = Character("Dean", color="#FFFFFF")
 
+image professor:
+    "professor.png"
 image student :
     "student_1.png"
     zoom 1.5
@@ -10,10 +12,12 @@ image student :
 image collegue:
     "collegue.png"
     zoom 2.2
-# The game starts here.
+
 image desktop:
     "desktop.png"
     zoom 2.2
+# The game starts here.
+
 
 
 label start:
@@ -90,7 +94,8 @@ label start:
                 "Check his calendar":
                     jump choices_check_calendar
 
-    label choices_check_emails:
+    label choices_check_emails: 
+    show desktop at right with dissolve
     student_1 "You see your unread email, but also a lot of emails between the professor and a mysterious contact "
     student_1 "Look through his notes"
     student_1 "Read all the emails between the professor and mysterious contact"
@@ -200,8 +205,13 @@ label start:
     student_1 "See a suspicious link and press Access the link"
     student_1 "You've been redirected to  Rick Astley - Never Gonna Give You Up and a note from the professor that you can find him in FAFCAB"
     scene bg_faf_cab
+    show professor
+    at right
+    with dissolve
     student_1 "You find the professor in FAFCAB"
-    show professor default
+
+   
+    
     professor "Finally, you are here, It took you longer than I expected. Sorry for the rick roll, it became quite boring around here"
     student_1 "You presented your final lab and you finally finished your semester"
     jump end_scene

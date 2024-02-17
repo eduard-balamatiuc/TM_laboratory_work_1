@@ -309,6 +309,7 @@ label start:
         label choices_11_common:
         scene bg_cab_310
         student_1 "The message hidden was {b}Find me in 310.{/b}"
+        play sound "door_open.mp3" volume 0.8
         scene bg_cab_inside
         show professor at center:
             zoom 1.3
@@ -319,6 +320,7 @@ label start:
         student_1 "You find the professor in 310."
        
         professor "I hope you found the quizzes fun. You can have a bonus point for that"
+        play sound "audio/bonus-points.mp3" volume 0.8
         jump choices_12_common
 
     label choices_papers:

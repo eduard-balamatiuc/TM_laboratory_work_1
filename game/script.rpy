@@ -15,12 +15,18 @@ image collegue:
 
 image desktop:
     "desktop.png"
-    zoom 2.2
+    zoom 2.1
+
+image dean:
+    "dean.png"
+    zoom 0.6
 # The game starts here.
 
 
 
 label start:
+
+    play music "audio/backgroundmusic.mp3" volume 0.5
 
     scene bg_cab_118
     "It was a tough semester and really loaded with a lot of tasks and laboratory works. You have to present your final project and today is the deadline."
@@ -86,16 +92,18 @@ label start:
                     jump choices_papers
 
     label choices_laptop:
-    show desktop at center
             menu:
                 "What will you check now?"
                 "Check emails":
                     jump choices_check_emails
                 "Check his calendar":
                     jump choices_check_calendar
+  
 
     label choices_check_emails: 
-    show desktop at right with dissolve
+    show desktop:
+        xalign 0.48 yalign 0.06
+        
     student_1 "You see your unread email, but also a lot of emails between the professor and a mysterious contact "
     student_1 "Look through his notes"
     student_1 "Read all the emails between the professor and mysterious contact"
@@ -144,9 +152,14 @@ label start:
 
     label choices_4_common:
     scene bg_dean_office
+    show dean:
+        xalign 0.51 yalign 0.5   
+    show student with moveinleft:
+        xalign 0.1 yalign 0.8
+        
     student_1 "Go to dean's office and announce him that you think something strange is happening with the professor and he is missing for too long"
     scene bg_magazine
-    show dean default
+    
     "It's been 2 days and you are reading in the local news that this professor was found dead in weird circumstances. You are haunted by this situation for your whole life "
     jump end_scene
 
@@ -205,9 +218,10 @@ label start:
     student_1 "See a suspicious link and press Access the link"
     student_1 "You've been redirected to  Rick Astley - Never Gonna Give You Up and a note from the professor that you can find him in FAFCAB"
     scene bg_faf_cab
-    show professor
-    at right
-    with dissolve
+    show professor at left with moveinleft
+    show student with moveinright:
+        xalign 0.98 yalign 2.1
+        zoom 1.3
     student_1 "You find the professor in FAFCAB"
 
    
@@ -296,8 +310,14 @@ label start:
         scene bg_cab_310
         student_1 "The message hidden was {b}Find me in 310.{/b}"
         scene bg_cab_inside
+        show professor at center:
+            zoom 1.3
+
+        show student with moveinright:
+            xalign 0.98 yalign 3.0
+            zoom 1.5
         student_1 "You find the professor in 310."
-        show professor default
+       
         professor "I hope you found the quizzes fun. You can have a bonus point for that"
         jump choices_12_common
 
